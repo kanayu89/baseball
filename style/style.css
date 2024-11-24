@@ -1,177 +1,67 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #f0f8ff;
-  color: #333;
-}
-
-.hero {
+/* Add these styles to your existing CSS file */
+.hero-section {
   position: relative;
-  width: 100%;
-  height: 60vh;
+  min-height: 600px;
+  background-color: #f8f9fa;
+  padding: 60px 20px 0;
   overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
-  background-color: rgba(100, 149, 237, 0.8);
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content h1 {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #2d3748;
 }
 
-.intro {
-  text-align: center;
-  padding: 3rem 2rem;
-  background-color: #ffffff;
-  margin-bottom: 2rem;
-}
-
-.intro h2 {
-  margin-bottom: 1.5rem;
-  color: #4682b4;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.item {
-  background-color: white;
-  margin-bottom: 3rem;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(70, 130, 180, 0.1);
-}
-
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  background-color: #f8fbff;
-}
-
-.carousel-inner {
-  display: flex;
-  width: 300%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  width: 33.333%;
-  height: 100%;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(70, 130, 180, 0.8);
-  color: white;
-  padding: 1rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-control:hover {
-  background-color: rgba(70, 130, 180, 1);
-}
-
-.carousel-control.prev {
-  left: 1rem;
-}
-
-.carousel-control.next {
-  right: 1rem;
-}
-
-.item-description {
-  color: #333;
+.hero-content p {
+  font-size: 1.25rem;
+  color: #4a5568;
   line-height: 1.6;
-  padding: 0 1rem;
 }
 
-.item-description h3 {
-  color: #4682b4;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+.hero-image-container {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
 }
 
-.item-description p {
-  font-size: 1.1rem;
+.hero-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
-  background-color: #4682b4;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 3rem;
-}
-
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-  .hero {
-    height: 40vh;
-  }
-
-  .hero-content {
-    padding: 1rem;
+  .hero-section {
+    min-height: 500px;
+    padding-top: 40px;
   }
 
   .hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
   }
 
-  .carousel {
-    height: 300px;
-  }
-
-  .item {
-    padding: 1rem;
-  }
-
-  .item-description h3 {
-    margin-bottom: 1rem;
+  .hero-content p {
+    font-size: 1.1rem;
   }
 }
+
+/* Make sure to keep your existing CSS below this point */
