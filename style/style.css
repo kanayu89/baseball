@@ -182,6 +182,66 @@ body {
   margin-top: 3rem;
 }
 
+model-viewer {
+  width: 100%;
+  height: 50vh; /* 50% of the viewport height */
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(70, 130, 180, 0.15);
+  background-color: #f8fbff;
+}
+button {
+  background-color: rgba(
+    21,
+    27,
+    84,
+    0.5
+  ); /* New semi-transparent background color */
+  color: #fff; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 12px; /* Reduced padding by 50% */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: rgba(
+    21,
+    27,
+    84,
+    0.7
+  ); /* Slightly darker background for hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+button:focus {
+  outline: none; /* Removes focus outline */
+  box-shadow: 0 0 0 3px rgba(21, 27, 84, 0.3); /* Adds a glow effect on focus */
+}
+
+button:active {
+  background-color: rgba(
+    21,
+    27,
+    84,
+    0.5
+  ); /* Keeps the background same after clicking */
+  color: #fff; /* Ensures the text color stays white */
+}
+
+a {
+  color: inherit; /* Ensures link text inherits the button's color */
+  text-decoration: none; /* Removes underline from the link */
+}
+
+a:visited {
+  color: inherit; /* Keeps link text color the same after visiting */
+}
+
 @media (max-width: 768px) {
   .hero {
     height: 400px; /* Reduce hero image height to 50% of the viewport height on mobile */

@@ -10,6 +10,10 @@
     />
     <link href="style/style.css" rel="stylesheet" />
     <script src="javascript/script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </head>
   <body>
     <div class="hero">
@@ -43,7 +47,48 @@
       <div class="item">
         <div class="item-description">
           <h3>Anthony Rendon's Giants Baseball Cap</h3>
-          <p>
+
+          <model-viewer
+            src="3Dviewer/black_cap.glb"
+            alt="A 3D model of black cap"
+            ar
+            auto-rotate
+            camera-controls
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="1.4264908623035917m 0.3057056300586948m 0.7695140850669395m"
+              data-normal="-0.3104381109762982m 0.9452768975947209m 0.10039803846274735m"
+              data-visibility-attribute="visible"
+            >
+              <a href="#blackcap_para" id="blackfront" class="HotspotAnnotation"
+                >Frontal View</a
+              >
+            </button>
+            <button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="1.582384397983574m 0.3210574692542713m 0.5865176098955849m"
+              data-normal="0.7452763401860458m 0.09524977773641455m -0.6599171588919758m"
+              data-visibility-attribute="visible"
+            >
+              <a href="#blackcap_para" id="blackrear" class="HotspotAnnotation"
+                >Rear View</a
+              ></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-5"
+              data-position="1.5890890395374941m 0.3417674405366691m 0.6911811390304747m"
+              data-normal="0.8622753205130813m 0.047016531061278455m 0.5042526325573592m"
+              data-visibility-attribute="visible"
+            >
+              <a href="#blackcap_para" id="blackside" class="HotspotAnnotation"
+                >Side View</a
+              >
+            </button></model-viewer
+          >
+          <p id="blackcap_para">
             A nostalgic piece from Anthony Rendon's early baseball journey, this
             YMCA hat from 1995 captures a pivotal moment in the future major
             league player's life. Originating from Houston, Texas, the cap was
@@ -61,21 +106,21 @@
         </div>
         <div class="carousel" id="carousel1">
           <div class="carousel-inner">
-            <div class="carousel-item">
+            <div class="carousel-item" id="carousel-blackfront">
               <img src="images/Black Cap Camera 1.png" alt="Black Cap View 1" />
               <p class="image-description">
                 Frontal view of the cap, highlighting the YMCA connection and
                 the early signs of Rendon's baseball journey in early 1995.
               </p>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" id="carousel-blackside">
               <img src="images/Black Cap Camera 2.png" alt="Black Cap View 2" />
               <p class="image-description">
                 Side profile revealing the structural details of the youth
                 baseball cap, preserving a moment from Rendon's formative years.
               </p>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" id="carousel-blackrear">
               <img src="images/Black Cap Camera 3.png" alt="Black Cap View 3" />
               <p class="image-description">
                 Rear view showcasing the cap's adjustable mechanism and overall
@@ -95,7 +140,25 @@
       <div class="item">
         <div class="item-description">
           <h3>1953 Chicago White Sox Signed Baseball</h3>
-          <p>
+          <model-viewer
+            src="3Dviewer/baseball.glb"
+            alt="A 3D model of baseball"
+            ar
+            auto-rotate
+            camera-controls
+            ><button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="2.9387929374351436m 0.7433821529588464m 0.7948766534052986m"
+              data-normal="0.04414889504078751m 0.14710831449453796m -0.988134615765106m"
+              data-visibility-attribute="visible"
+            >
+              <a href="#baseball_para" id="signatures" class="HotspotAnnotation"
+                >Signatures</a
+              >
+            </button></model-viewer
+          >
+          <p id="baseball_para">
             A remarkable piece of baseball history, this autographed baseball
             represents the 1953 Chicago White Sox team, which finished the
             season with an impressive 89-65 record, placing 3rd in the American
@@ -148,7 +211,46 @@
       <div class="item">
         <div class="item-description">
           <h3>Colorado Rockies Owner's Baseball Cap</h3>
-          <p>
+          <model-viewer
+            src="3Dviewer/brown_cap.glb"
+            alt="A 3D model of baseball"
+            ar
+            auto-rotate
+            camera-controls
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="2.399779345662147m 0.7146601668666428m 2.207967448000833m"
+              data-normal="-0.025918699562635365m 0.9495330750368066m 0.3125942424679766m"
+              data-visibility-attribute="visible"
+            >
+              <a href="#greycap_para" id="greyfront" class="HotspotAnnotation"
+                >Frontal View</a
+              ></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="2.392977565715191m 0.7254525266643539m 1.9626186764507947m"
+              data-normal="0.03059377400803308m 0.5172716442744548m -0.85527426421093m"
+              data-visibility-attribute="visible"
+            >
+              <a href="#greycap_para" id="greyrear" class="HotspotAnnotation"
+                >Rear View</a
+              ></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="2.402671062800131m 0.796920602753793m 2.0377261742905577m"
+              data-normal="0.10991611751922167m 0.9660668028418185m -0.23373784365499745m"
+              data-visibility-attribute="visible"
+            >
+              <a href="#greycap_para" id="greytop" class="HotspotAnnotation"
+                >Top View</a
+              >
+            </button></model-viewer
+          >
+          <p id="greycap_para">
             A unique artifact donated by Linda Alvarado, this baseball cap
             represents the leadership behind the Colorado Rockies. Meticulously
             preserved and documented by the National Museum of American History,
